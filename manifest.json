@@ -26,6 +26,12 @@
       "browser_action": {
         "default_icon": "icons/icon48.png"
       },                    
-      "permissions": ["activeTab"]
+      "permissions": ["activeTab",
+                      "tabs",
+                      "*://*.dafiti.com.br/*",
+                      "*://*.kanui.com.br/*",
+                      "*://*.tricae.com.br/*",
+                      "*://*.dafitisports.com.br/*"
+                    ]
      
 }    
