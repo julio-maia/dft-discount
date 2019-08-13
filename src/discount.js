@@ -1,10 +1,11 @@
 
     $(".banner-text-box").css("display", "none");
-    $(".col-md-3").css("width", "15%");
-    $(".col-md-9").css("width", "85%");
+    $(".col-md-3").css("width", "20%");
+    $(".col-md-9").css("width", "80%");
     $(".product-list-col-3 .product-box").css({
-        "width": "30%",
-        "margin-right": "2%"
+        "width": "30%"
+        ,"margin": "1%"
+        ,"padding": "5px"
     });
     $(".product-box").each((i, item) => {
         url = $(item).find(".quickview-link.product-box-preview").attr("data-remote");
@@ -14,7 +15,7 @@
             var soldBy = $('.product-seller-name', elements).text();
             $(item).css({
                 "border-radius": "2%",
-                "border-width": "2px"
+                "border-width": "1px"
             });
             
             if (soldByDafiti.indexOf("Dafiti") > 0 || soldBy.indexOf("Dafiti") > 0 || soldBy.indexOf("Kanui") > 0 || soldBy.indexOf("Tricae") > 0) {
